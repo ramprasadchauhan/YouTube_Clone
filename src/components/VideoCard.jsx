@@ -12,9 +12,17 @@ const VideoCard = ({ info }) => {
       />
       <ul>
         <li>{info?.snippet?.title} </li>
-        <li>{info.snippet?.channelTitle} </li>
+        <li>{info?.snippet?.channelTitle} </li>
         <li>{info?.statistics?.viewCount} views </li>
       </ul>
+    </div>
+  );
+};
+
+export const AdVideoCard = ({ info }) => {
+  return (
+    <div className="p-1 m-1 border border-red-900 ">
+      <VideoCard info={info} />
     </div>
   );
 };
