@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { userIcon } from "../utils/constant";
 
 const CommentContainer = () => {
@@ -66,7 +66,7 @@ const CommentContainer = () => {
   ];
 
   const Comment = ({ data }) => {
-    const { name, text, replies } = data;
+    const { name, text } = data;
     return (
       <div className="flex bg-gray-100 shadow-lg py-2 m-2">
         <img className="h-8 inline" src={userIcon} alt="user" />
